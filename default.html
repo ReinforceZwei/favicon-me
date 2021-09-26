@@ -1,0 +1,14 @@
+<p>Try me</p>
+<input id="url">
+<img id="icon" src="">
+<script>
+
+let input = document.getElementById('url');
+let icon = document.getElementById('icon');
+input.addEventListener('keyup', (ev) => {
+    if (ev.key === "Enter") {
+        let u = "http://localhost:3000/?url=" + input.value
+        icon.src = u;
+    }
+})
+</script>
